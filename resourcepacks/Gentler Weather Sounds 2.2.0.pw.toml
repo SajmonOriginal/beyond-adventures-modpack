@@ -1,0 +1,13 @@
+name = "Gentler Weather Sounds 2.2.0"
+filename = "Gentler Weather Sounds 2.2.0.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GB2EXKpD/versions/h9LZVq3I/Gentler%20Weather%20Sounds%202.2.0.zip"
+hash-format = "sha256"
+hash = "9198b0932e19def4795240cb4863b61a65f606fc66f9eb3cafeff1fbebb434cf"
+
+[update]
+[update.curseforge]
+file-id = 7669536
+project-id = 1278492

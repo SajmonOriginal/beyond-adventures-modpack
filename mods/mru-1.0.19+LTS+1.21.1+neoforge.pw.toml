@@ -1,0 +1,13 @@
+name = "mru-1.0.19+LTS+1.21.1+neoforge"
+filename = "mru-1.0.19+LTS+1.21.1+neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SNVQ2c0g/versions/qYqVf5jP/mru-1.0.19%2BLTS%2B1.21.1%2Bneoforge.jar"
+hash-format = "sha256"
+hash = "ed025100de31f5635d48a5a0cc4bc9c701d885bf3777e0c2ad8af5f2cad4601a"
+
+[update]
+[update.curseforge]
+file-id = 6803126
+project-id = 669659

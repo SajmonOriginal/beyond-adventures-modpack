@@ -1,0 +1,277 @@
+name: Release modpack
+
+# Tag a vX.Y.Z and the runner exports the modpack into a .mrpack, a
+# CurseForge zip, an auto-updating Prism instance zip, and a per-release
+# mods.json manifest, then attaches them to the matching GitHub Release.
+# The website's downloads page reads the latest release from the
+# GitHub Releases API.
+on:
+  push:
+    tags: ['v*']
+  # Manual trigger so we can publish an existing tag retroactively
+  # (e.g. backfilling v1.7.1 to Modrinth/CurseForge) without retagging.
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing tag to publish (e.g. v1.7.1)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    # TAG is the tag we're releasing — from the push event on tag pushes,
+    # from the dispatch input on manual runs. Used in place of
+    # GITHUB_REF_NAME so manual runs (where REF is the branch) still work.
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+
+      - name: Set up Go (for packwiz)
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Sync pack version with the tag
+        # The tag (minus leading v) becomes the modpack version so what's in
+        # pack.toml matches the release. Avoids drift between the .mrpack
+        # filename and what people see in their launcher.
+        run: |
+          VER="${TAG#v}"
+          sed -i "s/^version = .*/version = \"$VER\"/" pack.toml
+          packwiz refresh
+          echo "PACK_VERSION=$VER" >> "$GITHUB_ENV"
+
+      - name: Export Modrinth (.mrpack)
+        run: |
+          packwiz mr export -o "Beyond-Adventures-${PACK_VERSION}.mrpack"
+          ls -lh "Beyond-Adventures-${PACK_VERSION}.mrpack"
+
+      - name: Export CurseForge (.zip)
+        run: |
+          packwiz cf export -o "Beyond-Adventures-${PACK_VERSION}-CurseForge.zip"
+          ls -lh "Beyond-Adventures-${PACK_VERSION}-CurseForge.zip"
+
+      - name: Build Prism Launcher instance (.zip)
+        # Prism import = small zip with bootstrap + instance config; on each
+        # launch the bootstrap pulls the latest pack.toml and syncs mods.
+        # Players auto-update without re-importing.
+        env:
+          # Repo is public — packwiz-installer-bootstrap fetches pack.toml
+          # directly from raw.githubusercontent.com and resolves index.toml
+          # plus every tracked file relative to it.
+          PACK_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/pack.toml
+        run: |
+          set -euo pipefail
+          STAGE=prism-stage
+          rm -rf "$STAGE" && mkdir -p "$STAGE/.minecraft"
+
+          # Bootstrap is the auto-updater run pre-launch.
+          curl -fsSL -o "$STAGE/.minecraft/packwiz-installer-bootstrap.jar" \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
+          # MMC component list — pins MC + NeoForge to the same versions
+          # the modpack expects. Read those from pack.toml so we don't
+          # drift if you bump them later.
+          MC_VER=$(awk -F'"' '/^minecraft = /{print $2}' pack.toml)
+          NEO_VER=$(awk -F'"' '/^neoforge = /{print $2}' pack.toml)
+          cat > "$STAGE/mmc-pack.json" <<EOF
+          {
+              "components": [
+                  { "important": true, "uid": "net.minecraft", "version": "$MC_VER" },
+                  { "uid": "net.neoforged", "version": "$NEO_VER" }
+              ],
+              "formatVersion": 1
+          }
+          EOF
+
+          cat > "$STAGE/instance.cfg" <<EOF
+          InstanceType=OneSix
+          name=Beyond Adventures ${PACK_VERSION}
+          iconKey=default
+          OverrideMemory=true
+          MinMemAlloc=2048
+          MaxMemAlloc=6144
+          OverrideCommands=true
+          PreLaunchCommand="\$INST_JAVA" -jar "\$INST_MC_DIR/packwiz-installer-bootstrap.jar" -g $PACK_URL
+          EOF
+
+          OUT="Beyond-Adventures-${PACK_VERSION}-Prism.zip"
+          ( cd "$STAGE" && zip -qr "../$OUT" . )
+          ls -lh "$OUT"
+
+      - name: Generate mods.json manifest
+        # Walks mods/*.pw.toml + Modrinth API + CF API to produce the data
+        # the website renders on /mods. Lives in the release so /mods
+        # always mirrors the version players actually download.
+        # CF_API_KEY is needed for the handful of CF-only mods (atmosfera,
+        # catalogue, framework, hold-my-items, mighty-mail) that aren't
+        # listed on Modrinth — without it those fall back to filename
+        # labels and no icons.
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+        run: |
+          python3 scripts/gen-mods-manifest.py
+          mv mods.json "Beyond-Adventures-${PACK_VERSION}-mods.json"
+          ls -lh "Beyond-Adventures-${PACK_VERSION}-mods.json"
+
+      - name: Resolve release notes
+        # release-body.md becomes the single source of truth for the GitHub
+        # release body, Modrinth changelog, and CurseForge changelog.
+        #
+        # Priority:
+        #   1. RELEASE_NOTES.md committed at the repo root (source of truth
+        #      when present — overrides whatever the release body currently
+        #      shows, including stale auto-generated content)
+        #   2. Existing release body (no file committed → respect manual
+        #      UI edits on re-runs)
+        #   3. GitHub's auto-generated notes (commit log fallback)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -f RELEASE_NOTES.md ]; then
+            cp RELEASE_NOTES.md release-body.md
+            echo "Using committed RELEASE_NOTES.md."
+          elif gh release view "$TAG" --json body --jq .body \
+                 > release-body.md 2>/dev/null && [ -s release-body.md ]; then
+            echo "Reusing existing release body."
+          else
+            gh api -X POST \
+              "/repos/${GITHUB_REPOSITORY}/releases/generate-notes" \
+              -f tag_name="$TAG" \
+              --jq .body > release-body.md
+            echo "Auto-generated notes from commit log."
+          fi
+          echo "--- release-body.md ---"
+          cat release-body.md
+
+      - name: Upload all assets to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Create release with our notes, or sync notes onto an existing
+          # release so the GH UI matches what we publish to Modrinth/CF.
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --notes-file release-body.md
+          else
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --notes-file release-body.md
+          fi
+          # --clobber overwrites any asset of the same name from a previous
+          # run for the same tag, keeping uploads idempotent.
+          gh release upload "$TAG" \
+            "Beyond-Adventures-${PACK_VERSION}.mrpack" \
+            "Beyond-Adventures-${PACK_VERSION}-CurseForge.zip" \
+            "Beyond-Adventures-${PACK_VERSION}-Prism.zip" \
+            "Beyond-Adventures-${PACK_VERSION}-mods.json" \
+            --clobber
+
+      - name: Read MC + NeoForge versions for publish metadata
+        # Pulls game-versions/loaders straight from pack.toml so we don't
+        # have to bump the workflow when the pack moves to a new MC version.
+        id: pack
+        run: |
+          MC_VER=$(awk -F'"' '/^minecraft = /{print $2}' pack.toml)
+          echo "mc_version=$MC_VER" >> "$GITHUB_OUTPUT"
+
+      - name: Publish to Modrinth
+        # mc-publish handles Modrinth's API cleanly. CurseForge gets its
+        # own step below because mc-publish v3.3 doesn't recognise
+        # NeoForge as a separate CF modloader (it predates NeoForge's
+        # split from Forge) and the resulting upload returns a generic
+        # CF 500.
+        #
+        # continue-on-error: re-running the workflow on an existing tag
+        # (workflow_dispatch backfill, or a forced tag re-push) will hit
+        # Modrinth's "version already exists" rejection. That's expected,
+        # not a real failure, and shouldn't block the CurseForge step.
+        continue-on-error: true
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: beyondadventures
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-files: Beyond-Adventures-${{ env.PACK_VERSION }}.mrpack
+          name: Beyond Adventures ${{ env.PACK_VERSION }}
+          version: ${{ env.PACK_VERSION }}
+          version-type: release
+          loaders: neoforge
+          game-versions: ${{ steps.pack.outputs.mc_version }}
+          changelog-file: release-body.md
+
+      - name: Publish to CurseForge
+        # Direct CurseForge upload because mc-publish v3.3 can't resolve
+        # NeoForge to a CF "Modloader"-type game-version ID. We fetch the
+        # catalogue, look up the MC version + NeoForge IDs, and POST the
+        # multipart upload ourselves.
+        env:
+          CF_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          CF_PROJECT_ID: "1519176"
+          PACK_FILE: Beyond-Adventures-${{ env.PACK_VERSION }}-CurseForge.zip
+          MC_VER: ${{ steps.pack.outputs.mc_version }}
+        run: |
+          set -euo pipefail
+
+          curl -fsSL -H "X-Api-Token: $CF_TOKEN" \
+            https://minecraft.curseforge.com/api/game/versions \
+            > cf-game-versions.json
+
+          MC_ID=$(jq --arg v "$MC_VER" \
+            '[.[] | select(.name == $v)] | first | .id // empty' \
+            cf-game-versions.json)
+          if [ -z "$MC_ID" ]; then
+            echo "::error::CurseForge has no game version named \"$MC_VER\""
+            exit 1
+          fi
+
+          NEO_ID=$(jq \
+            '[.[] | select(.name == "NeoForge")] | first | .id // empty' \
+            cf-game-versions.json)
+          if [ -z "$NEO_ID" ]; then
+            echo "::error::CurseForge has no \"NeoForge\" modloader entry — API catalogue may have changed"
+            exit 1
+          fi
+
+          echo "Resolved CurseForge IDs: MC=$MC_ID, NeoForge=$NEO_ID"
+
+          # CF API expects metadata as a JSON-string form field plus the
+          # binary file part. type=application/json on the metadata part
+          # because the docs are ambiguous and some endpoints care.
+          METADATA=$(jq -nc \
+            --rawfile changelog release-body.md \
+            --argjson gameVersions "[$MC_ID, $NEO_ID]" \
+            '{
+              changelog: $changelog,
+              changelogType: "markdown",
+              releaseType: "release",
+              gameVersions: $gameVersions
+            }')
+
+          HTTP_CODE=$(curl -sS -o cf-response.json -w "%{http_code}" \
+            -H "X-Api-Token: $CF_TOKEN" \
+            -F "metadata=${METADATA};type=application/json" \
+            -F "file=@${PACK_FILE}" \
+            "https://minecraft.curseforge.com/api/projects/${CF_PROJECT_ID}/upload-file")
+
+          echo "HTTP $HTTP_CODE"
+          cat cf-response.json
+          echo
+
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::CurseForge upload failed (HTTP $HTTP_CODE)"
+            exit 1
+          fi
+
+          FILE_ID=$(jq -r .id cf-response.json)
+          echo "Uploaded CurseForge file ID: $FILE_ID"
+          echo "URL: https://www.curseforge.com/minecraft/modpacks/beyondadventures/files/$FILE_ID"

@@ -1,0 +1,10 @@
+.git/
+.forgejo/
+.github/
+.gitignore
+.packwizignore
+README.md
+LICENSE
+*.md
+data/
+scripts/

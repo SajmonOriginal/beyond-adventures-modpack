@@ -1,0 +1,13 @@
+name = "rainbows-foliage-polytone-edition-v1.7"
+filename = "rainbows-foliage-polytone-edition-v1.7.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bY2CaVIh/versions/yi1axqHV/rainbows-foliage-polytone-edition-v1.7.zip"
+hash-format = "sha256"
+hash = "e3851c5c2c9e796ed51409b6536e6441abb74d83ae30abd1761377c6b95968ea"
+
+[update]
+[update.curseforge]
+file-id = 7877282
+project-id = 1363585

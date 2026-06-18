@@ -1,0 +1,13 @@
+name = "trade-cycling-neoforge-1.21.1-1.0.18"
+filename = "trade-cycling-neoforge-1.21.1-1.0.18.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qpPoAL6m/versions/Dy7xxXr3/trade-cycling-neoforge-1.21.1-1.0.18.jar"
+hash-format = "sha256"
+hash = "dc1dc7ddcff62689e6d02212dbae33e54ecd906242bd8c2700be25e63aa93bba"
+
+[update]
+[update.curseforge]
+file-id = 6497876
+project-id = 570431

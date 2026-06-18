@@ -1,0 +1,13 @@
+name = "Mighty Mail"
+filename = "mighty_mail-neoforge-1.21.1-1.1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0647bf0f2d5e986dacbaa28a7799d000dd39c8d2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6542124
+project-id = 902986

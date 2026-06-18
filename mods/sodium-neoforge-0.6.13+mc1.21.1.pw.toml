@@ -1,0 +1,13 @@
+name = "sodium-neoforge-0.6.13+mc1.21.1"
+filename = "sodium-neoforge-0.6.13+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AANobbMI/versions/Pb3OXVqC/sodium-neoforge-0.6.13%2Bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "7acd7af2ef75ec883a6872c17494ead65e38025151eb08a1d60e36d34377f403"
+
+[update]
+[update.curseforge]
+file-id = 6382651
+project-id = 394468

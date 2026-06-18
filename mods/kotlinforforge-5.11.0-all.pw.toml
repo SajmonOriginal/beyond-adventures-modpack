@@ -1,0 +1,13 @@
+name = "kotlinforforge-5.11.0-all"
+filename = "kotlinforforge-5.11.0-all.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ordsPcFz/versions/NrSebcsG/kotlinforforge-5.11.0-all.jar"
+hash-format = "sha256"
+hash = "ac827b62ce8fe71760208671b4a694e3ccd35049075f9406a751cffb5a5c9779"
+
+[update]
+[update.curseforge]
+file-id = 7471280
+project-id = 351264

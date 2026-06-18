@@ -1,0 +1,13 @@
+name = "blur-neoforge-6.2.0+1.21.1"
+filename = "blur-neoforge-6.2.0+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NK39zBp2/versions/ZptIZWbz/blur-neoforge-6.2.0%2B1.21.1.jar"
+hash-format = "sha256"
+hash = "598a333c4b4f33cebd8e3aa5228f3a1b10808f38ff6d776b4dea004659d06614"
+
+[update]
+[update.curseforge]
+file-id = 7655029
+project-id = 393563

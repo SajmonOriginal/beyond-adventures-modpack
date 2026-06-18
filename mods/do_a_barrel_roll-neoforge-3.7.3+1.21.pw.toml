@@ -1,0 +1,13 @@
+name = "do_a_barrel_roll-neoforge-3.7.3+1.21"
+filename = "do_a_barrel_roll-neoforge-3.7.3+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6FtRfnLg/versions/Zj604q5O/do_a_barrel_roll-neoforge-3.7.3%2B1.21.jar"
+hash-format = "sha256"
+hash = "e56395ebb26318c11f3a9474bba14518f17f4f2028683eb0aa9cdc7dacf124e2"
+
+[update]
+[update.curseforge]
+file-id = 6189476
+project-id = 663658

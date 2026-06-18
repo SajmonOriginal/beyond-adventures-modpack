@@ -1,0 +1,13 @@
+name = "athena-neoforge-1.21-4.0.4"
+filename = "athena-neoforge-1.21-4.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/ZtIfQlxH/athena-neoforge-1.21-4.0.4.jar"
+hash-format = "sha256"
+hash = "f433c2f5a11bc631abd0e19ea4b2ac3d126e89ae8465da418563868775548309"
+
+[update]
+[update.curseforge]
+file-id = 7916201
+project-id = 841890

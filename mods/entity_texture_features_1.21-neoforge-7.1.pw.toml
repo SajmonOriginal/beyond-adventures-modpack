@@ -1,0 +1,13 @@
+name = "entity_texture_features_1.21-neoforge-7.1"
+filename = "entity_texture_features_1.21-neoforge-7.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BVzZfTc1/versions/YEMROAHv/entity_texture_features_1.21-neoforge-7.1.jar"
+hash-format = "sha256"
+hash = "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b"
+
+[update]
+[update.curseforge]
+file-id = 7930620
+project-id = 568563

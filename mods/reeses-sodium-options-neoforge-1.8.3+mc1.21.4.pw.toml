@@ -1,0 +1,13 @@
+name = "reeses-sodium-options-neoforge-1.8.3+mc1.21.4"
+filename = "reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Bh37bMuy/versions/xAiCe6w8/reeses-sodium-options-neoforge-1.8.3%2Bmc1.21.4.jar"
+hash-format = "sha256"
+hash = "e00e960f9cae9ea411429fadaa48e2d778f8064667cf6aaee7ce88332813b0bf"
+
+[update]
+[update.curseforge]
+file-id = 6091021
+project-id = 511319

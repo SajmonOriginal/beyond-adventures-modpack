@@ -1,0 +1,13 @@
+name = "entity_model_features_1.21-neoforge-3.2.2"
+filename = "entity_model_features_1.21-neoforge-3.2.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4I1XuqiY/versions/WD6HMbpv/entity_model_features_1.21-neoforge-3.2.2.jar"
+hash-format = "sha256"
+hash = "d3cccbd3445c7d00f5e7b6a7f6880aaa22aa4875f8bcba18d42f5665090e3042"
+
+[update]
+[update.curseforge]
+file-id = 7998618
+project-id = 844662

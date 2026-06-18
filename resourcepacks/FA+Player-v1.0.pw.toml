@@ -1,0 +1,13 @@
+name = "FA+Player-v1.0"
+filename = "FA+Player-v1.0.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TAIMVZCL/versions/io7wLL8n/FA%2BPlayer-v1.0.zip"
+hash-format = "sha256"
+hash = "b1f0c3cbcb77cdf2ad0c59e0f405f7da84f9c07f4ecd90cbb94a40bef70ca70b"
+
+[update]
+[update.curseforge]
+file-id = 7420591
+project-id = 1281029

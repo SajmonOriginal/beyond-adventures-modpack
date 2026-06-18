@@ -1,0 +1,13 @@
+name = "free_look_neoforge 1.21.0 - 1.21.6 V11"
+filename = "free_look_neoforge 1.21.0 - 1.21.6 V11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cebVsgGl/versions/E0elsBUH/free_look_neoforge%201.21.0%20-%201.21.6%20V11.jar"
+hash-format = "sha256"
+hash = "777c5d869946384e716ed863b27a557af35eae8801c0db02b3acb4f8b66cc476"
+
+[update]
+[update.curseforge]
+file-id = 6665534
+project-id = 969891

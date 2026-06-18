@@ -1,0 +1,13 @@
+name = "leafmealone-1.1.0"
+filename = "leafmealone-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ppMUvsIg/versions/XKudEdyS/leafmealone-1.1.0.jar"
+hash-format = "sha256"
+hash = "f6548ae3d40a1ffd68039ccf2b21343cb5d0e7a861f5c82bb710887ae185f6ac"
+
+[update]
+[update.curseforge]
+file-id = 7415967
+project-id = 1287189

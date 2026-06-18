@@ -1,0 +1,8 @@
+name = "Unobtrusive Weather"
+filename = "§9⛈ §bUnobtrusive Weather §8[v1.5].zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/67f0fKM2/versions/nwAdB9Hf/%C2%A79%E2%9B%88%20%C2%A7bUnobtrusive%20Weather%20%C2%A78%5Bv1.5%5D.zip"
+hash-format = "sha256"
+hash = "84b8c0a707ea11bda66ddc39cb03191bcef8bae0a829195898c905dda43e96c8"

@@ -1,0 +1,13 @@
+name = "architectury-13.0.8-neoforge"
+filename = "architectury-13.0.8-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/ZxYGwlk0/architectury-13.0.8-neoforge.jar"
+hash-format = "sha256"
+hash = "5ec578f814e8cca87aeffa6e424032e78d9ea5ea6b603dd834c2dc13c31141ee"
+
+[update]
+[update.curseforge]
+file-id = 5786327
+project-id = 419699

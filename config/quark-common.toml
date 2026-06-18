@@ -1,0 +1,223 @@
+[general]
+	"Enable 'q' Button" = false
+	"'q' Button on the Right" = false
+	"Disable Q Menu Effects" = false
+	#How many advancements deep you can see in the advancement screen. Vanilla is 2.
+	#Allowed values: (0,)
+	"Advancement Visibility Depth" = 2
+	#Blocks that Quark should treat as Shulker Boxes.
+	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
+	"Interpret Shulker Box Like Blocks" = true
+	#Set to true if you need to find the class name for a screen that's causing problems
+	"Print Screen Classnames" = false
+	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
+	"Allowed Screens" = []
+	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
+	"Use Screen List Blacklist" = false
+	#Set to false to disable the popup message telling you that you can config quark in the q menu
+	"Enable Onboarding" = true
+	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
+	"Chest Button Slot Target" = 27
+	#Set this to false to not show the Quark Programmer Art resource pack in the resource pack selection screen
+	"Generate Programmer Art" = true
+	#Set this to false to prevent Quark from ever disabling any vanilla data files. This will break certain modules, so only do this if you know what you're doing!
+	"Quark V D O" = true
+
+	[general.chest_button_offsets]
+		"Player X" = 0
+		"Player Y" = 0
+		"Top X" = 0
+		"Top Y" = 0
+		"Middle X" = 0
+		"Middle Y" = 0
+
+[categories]
+	management = true
+	tweaks = true
+	client = true
+
+[management]
+	"Automatic Tool Restock" = true
+	"Easy Transferring" = true
+	"Expanded Item Interactions" = true
+	"Hotbar Changer" = true
+	"Inventory Sorting" = true
+	"Item Sharing" = true
+	"Quick Armor Swapping" = true
+
+	[management.automatic_tool_restock]
+		#Enchantments deemed important enough to have special priority when finding a replacement
+		"Important Enchantments" = ["minecraft:silk_touch", "minecraft:fortune", "minecraft:infinity", "minecraft:luck_of_the_sea", "minecraft:looting"]
+		#Enable replacing your tools with tools of the same type but not the same item
+		"Enable Loose Matching" = true
+		#Enable comparing enchantments to find a replacement
+		"Enable Enchant Matching" = true
+		#Allow pulling items from one hotbar slot to another
+		"Check Hotbar" = false
+		"Unstackables Only" = false
+		#Any items you place in this list will be ignored by the restock feature
+		"Ignored Items" = ["botania:exchange_rod", "botania:dirt_rod", "botania:skydirt_rod", "botania:cobble_rod"]
+		#This feature disables itself if any of the following mods are loaded:
+		# - inventorytweaks
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[management.easy_transferring]
+		"Enable Shift Lock" = true
+
+	[management.expanded_item_interactions]
+		"Enable Armor Interaction" = true
+		"Enable Shulker Box Interaction" = true
+		"Enable Lava Interaction" = true
+		"Allow Opening Shulker Boxes" = true
+		"Allow Rotating Bundles" = true
+
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
+	[management.inventory_sorting]
+		"Enable Player Inventory" = true
+		"Enable Player Inventory In Chests" = true
+		"Enable Chests" = true
+		#Play a click when sorting inventories using keybindings
+		"Satisfying Click" = true
+
+	[management.item_sharing]
+		#In ticks.
+		#Allowed values: [0,)
+		Cooldown = 100
+		"Render Items In Chat" = true
+
+	[management.quick_armor_swapping]
+		"Swap Off Hand" = true
+
+[tweaks]
+	"Armed Armor Stands" = true
+	"Campfires Boost Elytra" = true
+	"Coral On Cactus" = true
+	"Double Door Opening" = true
+	"Dyeable Item Frames" = true
+	"Pat The Dogs" = true
+	"Poison Potato Usage" = true
+	"Simple Harvest" = true
+	"Villagers Follow Emeralds" = true
+
+	[tweaks.campfires_boost_elytra]
+		"Boost Strength" = 0.5
+		"Max Speed" = 1.0
+
+	[tweaks.double_door_opening]
+		"Enable Doors" = true
+		"Enable Fence Gates" = true
+		#This feature disables itself if any of the following mods are loaded:
+		# - utilitix
+		#This is done to prevent content overlap.
+		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
+		"Ignore Anti Overlap" = false
+
+	[tweaks.pat_the_dogs]
+		#How many ticks it takes for a dog to want affection after being pet/tamed; leave -1 to disable
+		"Dogs Want Love" = -1
+		#Whether you can pet all mobs
+		"Pet All Mobs" = false
+		#If `petAllMobs` is set, these mobs still can't be pet
+		"Pettable Denylist" = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:armor_stand"]
+		#Even if `petAllMobs` is not set, these mobs can be pet
+		"Pettable Allowlist" = []
+
+	[tweaks.poison_potato_usage]
+		Chance = 0.1
+		"Poison Effect" = true
+
+	[tweaks.simple_harvest]
+		#Can players harvest crops with empty hand clicks?
+		"Empty Hand Harvest" = true
+		#Does harvesting crops with a hoe cost durability?
+		"Harvesting Costs Durability" = false
+		#Should Quark look for(nonvanilla) crops, and handle them?
+		"Do Harvesting Search" = true
+		#Should villagers use simple harvest instead of breaking crops?
+		"Villagers Use Simple Harvest" = true
+		#Which crops can be harvested?
+		#Format is: "harvestState[,afterHarvest]", i.e. "minecraft:wheat[age=7]" or "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]"
+		"Harvestable Blocks" = ["minecraft:wheat[age=7]", "minecraft:carrots[age=7]", "minecraft:potatoes[age=7]", "minecraft:beetroots[age=3]", "minecraft:nether_wart[age=3]", "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]", "minecraft:cocoa[age=2,facing=south],minecraft:cocoa[age=0,facing=south]", "minecraft:cocoa[age=2,facing=east],minecraft:cocoa[age=0,facing=east]", "minecraft:cocoa[age=2,facing=west],minecraft:cocoa[age=0,facing=west]"]
+		#Which blocks should right click harvesting simulate a click on instead of breaking?
+		#This is for blocks like sweet berry bushes, which have right click harvesting built in.
+		"Right Clickable Blocks" = ["minecraft:sweet_berry_bush", "minecraft:cave_vines"]
+
+[client]
+	"Auto Walk Keybind" = true
+	"Back Button Keybind" = true
+	"Buckets Show Inhabitants" = true
+	Camera = true
+	"Chest Searching" = true
+	"Elytra Indicator" = true
+	"Improved Tooltips" = true
+	"Soul Candles" = true
+	"Usage Ticker" = true
+	"Uses For Curses" = true
+	"Wool Shuts Up Minecarts" = true
+
+	[client.auto_walk_keybind]
+		"Draw Hud" = true
+		"Hud Height" = 10
+
+	[client.buckets_show_inhabitants]
+		"Show Axolotls" = true
+		"Show Crabs" = true
+		"Show Tropical Fish" = true
+		"Show Shiny Slime" = true
+
+	[client.camera]
+		#Date format that will be displayed in screenshots. Must be a valid one (i.e. MM/dd/yyyy)
+		"Date Format" = "MM/dd/yyyy"
+
+		[client.chest_searching.overlay_color]
+			A = 0.67
+			R = 0.0
+			G = 0.0
+			B = 0.0
+
+	[client.improved_tooltips]
+		"Attribute Tooltips" = true
+		"Food Tooltips" = true
+		"Shulker Tooltips" = true
+		"Map Tooltips" = true
+		"Enchanting Tooltips" = true
+		"Fuel Time Tooltips" = true
+		"Shulker Box Use Colors" = true
+		"Shulker Box Require Shift" = false
+		"Map Require Shift" = false
+		#The value of each shank of food.
+		#Tweak this when using mods like Hardcore Hunger which change that value.
+		"Food Divisor" = 2
+		"Show Saturation" = true
+		"Food Compression Threshold" = 4
+		"Fuel Time Divisor" = 200
+		#Should item attributes be colored relative to your current equipped item?
+		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
+		#If set to false, item attributes will show in white or red if they're negative values.
+		"Show Upgrade Status" = true
+		"Animate Up Down Arrows" = true
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:mace", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield", "quark:pickarang", "supplementaries:slingshot", "supplementaries:bubble_blower", "farmersdelight:diamond_knife", "the_bumblezone:stinger_spear", "the_bumblezone:crystal_cannon", "the_bumblezone:honey_crystal_shield", "the_bumblezone:honey_bee_leggings_2"]
+		#A list of additional stacks to display on each enchantment
+		#The format is as follows:
+		#enchant_id=item1,item2,item3...
+		#So to display a carrot on a stick on a mending book, for example, you use:
+		#minecraft:mending=minecraft:carrot_on_a_stick
+		"Enchanting Additional Stacks" = []
+
+	[client.usage_ticker]
+		#Switch the armor display to the off hand side and the hand display to the main hand side
+		Invert = false
+		"Shift Left" = 0
+		"Shift Right" = 0
+		"Enable Main Hand" = true
+		"Enable Off Hand" = true
+		"Enable Armor" = true
+
+	[client.uses_for_curses]
+		"Vanish Pumpkin Overlay" = true
+		"Bind Armor Stands With Player Heads" = true

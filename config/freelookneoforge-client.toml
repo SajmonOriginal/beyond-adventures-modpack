@@ -1,0 +1,38 @@
+#Hide the crosshair when free Look is active
+HideCrosshair = true
+#Rotate player when interaktion
+RotateFirstPerson = true
+#Rotate camera when interaktion
+RotateThirdPersonFront = false
+#Rotate player when interaktion
+RotateThirdPersonBack = true
+#Rotate player when enable on the kay - normal left klick
+RotateKeyUse = true
+#Rotate player when enable on the kay- normal middle klick
+RotatePickItem = true
+#Rotate player when enable on the kay- normal left klick
+RotateAttack = true
+#Mode 0 = Move camera, 1 = Move head
+# Default: 0
+# Range: 0 ~ 1
+ModeFirstPerson = 0
+#Mode 0 = Move camera, 1 = Move head
+# Default: 1
+# Range: 0 ~ 1
+ModeThirdPersonFront = 1
+#Mode 0 = Move camera, 1 = Move head
+# Default: 0
+# Range: 0 ~ 1
+ModeThirdPersonBack = 0
+#Automatic switches perspective wenn free look trigger
+#Allowed Values: OFF, FirstPerson, ThirdPersonFront, ThirdPersonBack
+AutoSwitchPerspective = "OFF"
+#Automatic switches perspective back wenn free look trigger stops
+AutoSwitchPerspeciveBack = true
+#Automatic switches perspective wenn the Swab perspective is pressed
+#Allowed Values: OFF, FirstPerson, ThirdPersonFront, ThirdPersonBack
+AutoSwapPerspective = "OFF"
+#Automatic switches perspective back wenn the Swab perspective not pressed eny more pressed
+AutoSwapPerspeciveBack = true
+#Automatic switches perspective back wenn the Swab perspective not pressed eny more pressed
+UpSideDownEnabled = false

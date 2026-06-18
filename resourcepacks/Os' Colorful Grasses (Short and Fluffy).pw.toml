@@ -1,0 +1,13 @@
+name = "Os' Colorful Grasses (Short and Fluffy)"
+filename = "Os' Colorful Grasses (Short and Fluffy).zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/O2zhH8n8/versions/6y5oHV7t/Os%27%20Colorful%20Grasses%20%28Short%20and%20Fluffy%29.zip"
+hash-format = "sha256"
+hash = "f352b92a22e893d13bad898fc2ff7998cb714090cb139df139beec6343e4e296"
+
+[update]
+[update.curseforge]
+file-id = 8013976
+project-id = 1352395

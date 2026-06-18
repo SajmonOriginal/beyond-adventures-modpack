@@ -1,0 +1,8 @@
+name = "create_trimmed"
+filename = "create_trimmed.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zvaHXgQz/versions/P1pdTwvn/create_trimmed.jar"
+hash-format = "sha256"
+hash = "77c94f473baee87f89bd6793da0e3425c578425ca31af148b2840221ea79f19a"

@@ -1,0 +1,8 @@
+name = "Visual-Vibrance-v0.3.5a"
+filename = "Visual-Vibrance-v0.3.5a.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/l6Uqs2fS/versions/zGC385Y8/Visual-Vibrance-v0.3.5a.zip"
+hash-format = "sha256"
+hash = "0bf94c357b7d3a7312aa828edf892354c25273931543d0087b5577aad4fb76f0"

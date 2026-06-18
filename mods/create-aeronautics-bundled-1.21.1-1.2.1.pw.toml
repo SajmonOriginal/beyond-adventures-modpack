@@ -1,0 +1,13 @@
+name = "create-aeronautics-bundled-1.21.1-1.2.1"
+filename = "create-aeronautics-bundled-1.21.1-1.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oWaK0Q19/versions/YhZLrAFC/create-aeronautics-bundled-1.21.1-1.2.1.jar"
+hash-format = "sha256"
+hash = "5a8c6d168ec1b47ecee7f2e83a93accbca71544d2b14ca1ca1b1271855f26248"
+
+[update]
+[update.curseforge]
+file-id = 8003941
+project-id = 676721

@@ -1,0 +1,13 @@
+name = "iris-neoforge-1.8.12+mc1.21.1"
+filename = "iris-neoforge-1.8.12+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YL57xq9U/versions/t3ruzodq/iris-neoforge-1.8.12%2Bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "3e3f94d2d5cdcb8145c4385d521974aa2d8669b2cc212351f70cf06488182e83"
+
+[update]
+[update.curseforge]
+file-id = 6661598
+project-id = 455508

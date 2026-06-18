@@ -1,0 +1,13 @@
+name = "sodiumoptionsapi-neoforge-1.0.10-1.21.1"
+filename = "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Es5v4eyq/versions/lrsX3TMS/sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"
+hash-format = "sha256"
+hash = "a6b9114615e2fff97e1a99fbf9fae17b87baacb26b69dde2f423867b5932bc02"
+
+[update]
+[update.curseforge]
+file-id = 6100815
+project-id = 1103431

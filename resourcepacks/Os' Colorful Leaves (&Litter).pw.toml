@@ -1,0 +1,8 @@
+name = "Os' Colorful Leaves (&Litter)"
+filename = "Os' Colorful Leaves (&Litter).zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4lCJnsug/versions/QyuwrtbT/Os%27%20Colorful%20Leaves%20%28%26Litter%29.zip"
+hash-format = "sha256"
+hash = "05449eec5f309ef98f9d75883b9c3147d6947a47b974df421162e72836eb0064"

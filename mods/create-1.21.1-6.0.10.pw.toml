@@ -1,0 +1,13 @@
+name = "create-1.21.1-6.0.10"
+filename = "create-1.21.1-6.0.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar"
+hash-format = "sha256"
+hash = "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+
+[update]
+[update.curseforge]
+file-id = 7963363
+project-id = 328085

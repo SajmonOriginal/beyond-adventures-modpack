@@ -1,0 +1,13 @@
+name = "Climbable Ropes for Create Aeronautics"
+filename = "climbable_ropes-1.6.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "336343963cae8f03276048543ef76b59801222f0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8046689
+project-id = 1528764

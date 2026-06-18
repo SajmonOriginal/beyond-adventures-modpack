@@ -1,0 +1,13 @@
+name = "fancytoasts-neoforge-1.21.1-1.4.7"
+filename = "fancytoasts-neoforge-1.21.1-1.4.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/eUziWqPC/versions/ErhgSKSc/fancytoasts-neoforge-1.21.1-1.4.7.jar"
+hash-format = "sha256"
+hash = "a352f25089c0c2402040068a8d07ab465a522520e5a6150bbbaabbe530ace551"
+
+[update]
+[update.curseforge]
+file-id = 7985488
+project-id = 1326436

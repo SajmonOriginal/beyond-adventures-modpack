@@ -1,0 +1,13 @@
+name = "visuality-forge-2.1.0"
+filename = "visuality-forge-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/z13R7Et1/versions/ZBidwV02/visuality-forge-2.1.0.jar"
+hash-format = "sha256"
+hash = "f4c134d3041e9e6626276a26d2864f3aed177c08c8a109cd3788c5470c28d02e"
+
+[update]
+[update.curseforge]
+file-id = 6917625
+project-id = 704256

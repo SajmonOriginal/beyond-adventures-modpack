@@ -1,0 +1,13 @@
+name = "rechiseled-1.2.4-neoforge-mc1.21"
+filename = "rechiseled-1.2.4-neoforge-mc1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/B0g2vT6l/versions/b3uurWWs/rechiseled-1.2.4-neoforge-mc1.21.jar"
+hash-format = "sha256"
+hash = "3316acf7af3a250fd0f2fa5c39540ee4e81c21f7ead29c4107d6a95f47642dd2"
+
+[update]
+[update.curseforge]
+file-id = 7687594
+project-id = 558998

@@ -1,0 +1,13 @@
+name = "sit-1.21.1-1.4"
+filename = "sit-1.21.1-1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VKXzIykF/versions/DpfxOIrO/sit-1.21.1-1.4.jar"
+hash-format = "sha256"
+hash = "a726385d1c6781f93906dce38d125fe5f4da32b10ae5601bf855773939603c04"
+
+[update]
+[update.curseforge]
+file-id = 6776225
+project-id = 278717

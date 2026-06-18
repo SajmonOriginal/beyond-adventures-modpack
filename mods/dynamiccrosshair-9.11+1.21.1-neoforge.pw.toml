@@ -1,0 +1,13 @@
+name = "dynamiccrosshair-9.11+1.21.1-neoforge"
+filename = "dynamiccrosshair-9.11+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZcR9weSm/versions/RShcBQz5/dynamiccrosshair-9.11%2B1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "2259d04512cccce9796e6975483e3ddf48f69678dbf42b7e9cff38da3095f4f0"
+
+[update]
+[update.curseforge]
+file-id = 7388392
+project-id = 623800

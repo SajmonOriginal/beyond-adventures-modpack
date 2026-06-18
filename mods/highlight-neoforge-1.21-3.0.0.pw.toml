@@ -1,0 +1,13 @@
+name = "highlight-neoforge-1.21-3.0.0"
+filename = "highlight-neoforge-1.21-3.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Vz96hXMh/versions/AhmYRg22/highlight-neoforge-1.21-3.0.0.jar"
+hash-format = "sha256"
+hash = "b1f4fab5bcfa82f74c5f7a3e61d6ef5fdc9415e3435f84f59fda5e2881eafcda"
+
+[update]
+[update.curseforge]
+file-id = 5447146
+project-id = 667245

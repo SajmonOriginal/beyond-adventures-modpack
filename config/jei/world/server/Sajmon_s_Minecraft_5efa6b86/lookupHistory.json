@@ -1,0 +1,17 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"minecraft:copper_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:alchemy_book"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:boo_jack_o_lantern"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:supported_acacia_door"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:woven_orange_stained_glass_pane"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:tiled_andesite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:netherrack_scales"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:cut_blank_stone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"chipped:pegged_magenta_concrete"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:netherite_diving_helmet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:red_sand_paper"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rechiseled:acacia_planks_large_tiles_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rechiseled:crimson_planks_pattern_stairs_connecting"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"rechiseled:jungle_planks_brick_pattern_stairs_connecting"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

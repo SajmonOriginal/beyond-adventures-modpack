@@ -1,0 +1,13 @@
+name = "letsdo-furniture-neoforge-1.1.4"
+filename = "letsdo-furniture-neoforge-1.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3JQDJrYW/versions/aYYcQFNB/letsdo-furniture-neoforge-1.1.4.jar"
+hash-format = "sha256"
+hash = "c291928e4402ef638d2544fb3c551379375b80acf5a019383b57752a36196e54"
+
+[update]
+[update.curseforge]
+file-id = 7751818
+project-id = 1062363

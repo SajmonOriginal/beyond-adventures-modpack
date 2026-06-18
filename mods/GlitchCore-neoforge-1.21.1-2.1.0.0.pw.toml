@@ -1,0 +1,13 @@
+name = "GlitchCore-neoforge-1.21.1-2.1.0.0"
+filename = "GlitchCore-neoforge-1.21.1-2.1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/s3dmwKy5/versions/8wmCpbQ2/GlitchCore-neoforge-1.21.1-2.1.0.0.jar"
+hash-format = "sha256"
+hash = "31589ffc136ac031319db88fa7ce2599ba789ae5d18bd5125e1857e20a834993"
+
+[update]
+[update.curseforge]
+file-id = 5660740
+project-id = 955399

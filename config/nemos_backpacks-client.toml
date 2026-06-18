@@ -1,0 +1,2 @@
+#Whether to render the backpack on the player's back when equipped
+renderBackpackOnBack = true

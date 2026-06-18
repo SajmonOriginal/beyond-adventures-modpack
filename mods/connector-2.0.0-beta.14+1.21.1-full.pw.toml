@@ -1,0 +1,13 @@
+name = "connector-2.0.0-beta.14+1.21.1-full"
+filename = "connector-2.0.0-beta.14+1.21.1-full.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/u58R1TMW/versions/1i8teo7m/connector-2.0.0-beta.14%2B1.21.1-full.jar"
+hash-format = "sha256"
+hash = "a79817f1076e2e6499b0ab09c4e8c032d04b071341b66d036c3d96112804e51b"
+
+[update]
+[update.curseforge]
+file-id = 7634148
+project-id = 890127

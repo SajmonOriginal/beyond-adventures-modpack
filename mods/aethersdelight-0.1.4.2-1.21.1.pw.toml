@@ -1,0 +1,8 @@
+name = "aethersdelight-0.1.4.2-1.21.1"
+filename = "aethersdelight-0.1.4.2-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XUztKPS9/versions/l6fgFjUf/aethersdelight-0.1.4.2-1.21.1.jar"
+hash-format = "sha256"
+hash = "11b07fce5c69682290106fc1c79fc447606791239a18965f71114f360e8a947e"

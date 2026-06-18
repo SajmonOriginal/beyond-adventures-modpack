@@ -1,0 +1,13 @@
+name = "sounds-2.4.22+lts+1.21.1-neoforge"
+filename = "sounds-2.4.22+lts+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZouiUX7t/versions/kti7i9SG/sounds-2.4.22%2Blts%2B1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "d3bda0a7a5b1f267747da182e788139da380f625eaf96a5c2a8fa5bcb8d908b7"
+
+[update]
+[update.curseforge]
+file-id = 7325254
+project-id = 925889

@@ -1,0 +1,13 @@
+name = "copperagebackport-neoforge-1.21.1-0.1.4"
+filename = "copperagebackport-neoforge-1.21.1-0.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/a1llHwl4/versions/JEPUV1lF/copperagebackport-neoforge-1.21.1-0.1.4.jar"
+hash-format = "sha256"
+hash = "1cd0007d427be712d303f5a6f8084c67a2635f02e686e8c9c824cc1dcfdfa272"
+
+[update]
+[update.curseforge]
+file-id = 7283478
+project-id = 1386823

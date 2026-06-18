@@ -1,0 +1,13 @@
+name = "Atmosfera Neo"
+filename = "atmosfera-1.21.1-NeoForge-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bdd9868bf0df372db75f28670b45b48b90aecba0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8020555
+project-id = 1499605

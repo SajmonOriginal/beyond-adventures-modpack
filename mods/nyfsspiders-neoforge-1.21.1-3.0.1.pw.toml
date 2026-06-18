@@ -1,0 +1,13 @@
+name = "nyfsspiders-neoforge-1.21.1-3.0.1"
+filename = "nyfsspiders-neoforge-1.21.1-3.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/dOGM7ccu/versions/pjXVTyLu/nyfsspiders-neoforge-1.21.1-3.0.1.jar"
+hash-format = "sha256"
+hash = "f427d974073292434afe04963b127d6dd8f93f70b4390253d7275fb68cf2b58a"
+
+[update]
+[update.curseforge]
+file-id = 7445048
+project-id = 686058

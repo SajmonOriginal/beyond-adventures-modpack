@@ -1,0 +1,13 @@
+name = "skinlayers3d-neoforge-1.11.1-mc1.21.1"
+filename = "skinlayers3d-neoforge-1.11.1-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zV5r3pPn/versions/lWa5oHuK/skinlayers3d-neoforge-1.11.1-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "c825d6acd41a983217f410c6d51c6557e3afc35131f6da0aa6dcd07e67cfa52c"
+
+[update]
+[update.curseforge]
+file-id = 7857567
+project-id = 521480

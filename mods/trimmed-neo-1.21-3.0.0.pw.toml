@@ -1,0 +1,13 @@
+name = "trimmed-neo-1.21-3.0.0"
+filename = "trimmed-neo-1.21-3.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/q8k4zHw5/versions/wqxXFq0d/trimmed-neo-1.21-3.0.0.jar"
+hash-format = "sha256"
+hash = "06ad8575ab8bb3eb367a57bd6c9253eb466ffc7f5f23bd31a2c0312f48ad883f"
+
+[update]
+[update.curseforge]
+file-id = 5424737
+project-id = 857036

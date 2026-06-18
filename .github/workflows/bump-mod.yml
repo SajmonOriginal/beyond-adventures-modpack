@@ -1,0 +1,82 @@
+name: Bump custom mod
+
+# Triggered by a custom mod's release CI (colormod, teamsmod, ...) after it
+# publishes a new jar to maven.sajmon.gg. The mod repo POSTs a workflow
+# dispatch with the slug + new version; this job rewrites the matching
+# mods/<slug>.pw.toml URL+filename, refreshes hashes, and commits.
+#
+# The caller repo must hit this with a PAT that has `actions: write` and
+# `contents: read` on this repo (the default GITHUB_TOKEN of a different
+# repo cannot trigger a workflow here).
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Mod slug (filename in mods/ without .pw.toml, e.g. colormod)"
+        required: true
+      version:
+        description: "New version (e.g. 1.0.2)"
+        required: true
+      group_path:
+        description: "Maven group path (e.g. cz/sajmonoriginal)"
+        required: false
+        default: "cz/sajmonoriginal"
+
+# Serialize so two simultaneous bumps don't clobber index.toml.
+concurrency:
+  group: bump-mod
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go (for packwiz)
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Rewrite pw.toml URL + filename
+        env:
+          SLUG: ${{ inputs.slug }}
+          VERSION: ${{ inputs.version }}
+          GROUP: ${{ inputs.group_path }}
+        run: |
+          set -euo pipefail
+          FILE="mods/${SLUG}.pw.toml"
+          if [ ! -f "$FILE" ]; then
+            echo "::error::$FILE not found"
+            exit 1
+          fi
+
+          NEW_FILENAME="${SLUG}-${VERSION}.jar"
+          NEW_URL="https://maven.sajmon.gg/releases/${GROUP}/${SLUG}/${SLUG}/${VERSION}/${NEW_FILENAME}"
+
+          sed -i "s|^filename = .*|filename = \"${NEW_FILENAME}\"|" "$FILE"
+          sed -i "s|^url = .*|url = \"${NEW_URL}\"|" "$FILE"
+          # Wipe stale hash so packwiz refresh recomputes it from the new URL.
+          sed -i '/^hash = /d' "$FILE"
+          echo "--- $FILE after rewrite ---"
+          cat "$FILE"
+
+          packwiz refresh
+
+      - name: Commit & push
+        run: |
+          git config user.email "ci@sajmon.gg"
+          git config user.name "github-actions[bot]"
+          git add mods/${{ inputs.slug }}.pw.toml index.toml
+          if git diff --cached --quiet; then
+            echo "No changes to commit (already at requested version)."
+            exit 0
+          fi
+          git commit -m "Bump ${{ inputs.slug }} to ${{ inputs.version }}"
+          git push origin HEAD:main

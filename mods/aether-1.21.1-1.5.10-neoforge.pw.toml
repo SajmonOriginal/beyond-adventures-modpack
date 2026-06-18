@@ -1,0 +1,8 @@
+name = "aether-1.21.1-1.5.10-neoforge"
+filename = "aether-1.21.1-1.5.10-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YhmgMVyu/versions/K5X5qMwG/aether-1.21.1-1.5.10-neoforge.jar"
+hash-format = "sha256"
+hash = "a999a9265eb550a46a0f8eedfee7c3c75371d7f6cf34b7c09ff800e48633e9f8"

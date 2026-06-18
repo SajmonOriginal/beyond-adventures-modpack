@@ -1,0 +1,13 @@
+name = "FreshAnimations_v1.10.4"
+filename = "FreshAnimations_v1.10.4.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/50dA9Sha/versions/xN57JJts/FreshAnimations_v1.10.4.zip"
+hash-format = "sha256"
+hash = "8e44b29560d2e7d952c0a4f77f0451e6dcb048f827189bffc712b446be8de7f2"
+
+[update]
+[update.curseforge]
+file-id = 7670377
+project-id = 453763

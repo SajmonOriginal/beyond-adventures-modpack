@@ -1,0 +1,8 @@
+name = "EclipseShaders"
+filename = "EclipseShaders.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/s8ZCVd1a/versions/3lt2DwGh/EclipseShaders.zip"
+hash-format = "sha256"
+hash = "de2326c6ba11f592cc50c925dee3b021950725a10b66797865aa2dc5c856d2c5"

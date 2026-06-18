@@ -1,0 +1,13 @@
+name = "comforts-neoforge-9.0.5+1.21.1"
+filename = "comforts-neoforge-9.0.5+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SaCpeal4/versions/3kpPjcTc/comforts-neoforge-9.0.5%2B1.21.1.jar"
+hash-format = "sha256"
+hash = "6b0fd35a1349107e08a45539adbde9683bb203febc43a3305f6fc4ac73e59615"
+
+[update]
+[update.curseforge]
+file-id = 7515858
+project-id = 276951

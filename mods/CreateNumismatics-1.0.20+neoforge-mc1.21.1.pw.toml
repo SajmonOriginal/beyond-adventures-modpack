@@ -1,0 +1,13 @@
+name = "CreateNumismatics-1.0.20+neoforge-mc1.21.1"
+filename = "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Jdbbtt0i/versions/guON3qvQ/CreateNumismatics-1.0.20%2Bneoforge-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+
+[update]
+[update.curseforge]
+file-id = 7948018
+project-id = 889722

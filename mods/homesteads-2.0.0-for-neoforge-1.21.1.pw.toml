@@ -1,0 +1,13 @@
+name = "homesteads-2.0.0-for-neoforge-1.21.1"
+filename = "homesteads-2.0.0-for-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6ItsEKMh/versions/XknGijgC/homesteads-2.0.0-for-neoforge-1.21.1.jar"
+hash-format = "sha256"
+hash = "4b901ea70242e1be30c350068b8bcc9844647f39a3c6bbbeca89f2c9799fa5bd"
+
+[update]
+[update.curseforge]
+file-id = 7694394
+project-id = 1336255

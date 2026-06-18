@@ -1,0 +1,13 @@
+name = "better-clouds-1.7.20-alpha+1.21.1-neoforge.rev.4c611d9"
+filename = "better-clouds-1.7.20-alpha+1.21.1-neoforge.rev.4c611d9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5srFLIaK/versions/ucwzanPQ/better-clouds-1.7.20-alpha%2B1.21.1-neoforge.rev.4c611d9.jar"
+hash-format = "sha256"
+hash = "d80ea189bb859ce12dd702803c35512a39c707ca7211a84abba3341362e77534"
+
+[update]
+[update.curseforge]
+file-id = 8003096
+project-id = 1285973

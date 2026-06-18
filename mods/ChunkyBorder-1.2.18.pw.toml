@@ -1,0 +1,13 @@
+name = "ChunkyBorder-1.2.18"
+filename = "ChunkyBorder-1.2.18.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/s86X568j/versions/Pj0tqKnE/ChunkyBorder-1.2.18.jar"
+hash-format = "sha256"
+hash = "fb1b49ac0a2c9211a5b39331b024d7dbb85a3ddb5443a79b7d9223d3629f190e"
+
+[update]
+[update.curseforge]
+file-id = 5437062
+project-id = 974992

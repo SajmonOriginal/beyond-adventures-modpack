@@ -1,0 +1,13 @@
+name = "lithium-neoforge-0.15.3+mc1.21.1"
+filename = "lithium-neoforge-0.15.3+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/RXHf27Wv/lithium-neoforge-0.15.3%2Bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "a6548862bd13ff8eea6747cf61df50c8374a16a22d067614e414ed600eee6d83"
+
+[update]
+[update.curseforge]
+file-id = 7740400
+project-id = 360438

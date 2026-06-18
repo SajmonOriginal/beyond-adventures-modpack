@@ -1,0 +1,13 @@
+name = "tectonic-3.0.22-neoforge-21.1"
+filename = "tectonic-3.0.22-neoforge-21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/lWDHr9jE/versions/iCGkqnnx/tectonic-3.0.22-neoforge-21.1.jar"
+hash-format = "sha256"
+hash = "bf5cf7e351586865905eceb2a63e06769f8cd0f9c826864b6a30541e20cffc56"
+
+[update]
+[update.curseforge]
+file-id = 7903156
+project-id = 686836

@@ -1,0 +1,13 @@
+name = "chloride-NEOFORGE-mc1.21.1-v1.7.5"
+filename = "chloride-NEOFORGE-mc1.21.1-v1.7.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yD9qW65f/versions/4FqE7c3A/chloride-NEOFORGE-mc1.21.1-v1.7.5.jar"
+hash-format = "sha256"
+hash = "572460f9f0030c276fcfd61fab8c0b3712a2e90e95aa0776575f6d980061b1f4"
+
+[update]
+[update.curseforge]
+file-id = 7378108
+project-id = 931925

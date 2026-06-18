@@ -1,0 +1,13 @@
+name = "notenoughanimations-neoforge-1.12.2-mc1.21.1"
+filename = "notenoughanimations-neoforge-1.12.2-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/MPCX6s5C/versions/FqqXQToo/notenoughanimations-neoforge-1.12.2-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "ec941215d8b14ccf2927e5c80304511d6340d6025fec7212fcdb3fb2ef00a61c"
+
+[update]
+[update.curseforge]
+file-id = 7927757
+project-id = 433760

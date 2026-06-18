@@ -1,0 +1,13 @@
+name = "lithostitched-1.7.2-neoforge-21.1"
+filename = "lithostitched-1.7.2-neoforge-21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XaDC71GB/versions/IONexlgI/lithostitched-1.7.2-neoforge-21.1.jar"
+hash-format = "sha256"
+hash = "52c4b387f41a7bcc6ce85daeccd9356dd96314f5ea5df33ebc3ef0249c8c7500"
+
+[update]
+[update.curseforge]
+file-id = 7980813
+project-id = 936015

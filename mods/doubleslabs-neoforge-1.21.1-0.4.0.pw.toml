@@ -1,0 +1,13 @@
+name = "doubleslabs-neoforge-1.21.1-0.4.0"
+filename = "doubleslabs-neoforge-1.21.1-0.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hcHS5k6e/versions/UdmYEbEo/doubleslabs-neoforge-1.21.1-0.4.0.jar"
+hash-format = "sha256"
+hash = "d1b9e956823acf85a64aad25064832b5c2d798c4cc5a8aa02b419821acc43463"
+
+[update]
+[update.curseforge]
+file-id = 7417207
+project-id = 350179

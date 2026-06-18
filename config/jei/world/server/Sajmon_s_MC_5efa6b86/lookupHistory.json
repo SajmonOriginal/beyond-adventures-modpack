@@ -1,0 +1,9 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"minecraft:cherry_wood"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:acacia_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:birch_planks"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:crimson_button"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:crimson_door"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"numismatics:bevel"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

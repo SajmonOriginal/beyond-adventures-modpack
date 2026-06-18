@@ -1,0 +1,13 @@
+name = "gml-6.0.2"
+filename = "gml-6.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zg2tT2Vu/versions/IDRMIIb4/gml-6.0.2.jar"
+hash-format = "sha256"
+hash = "c508464433fc7739c1aa6a7208c5dbf2c02038fe9813f98187b3fb10e457d2bd"
+
+[update]
+[update.curseforge]
+file-id = 5902913
+project-id = 661517

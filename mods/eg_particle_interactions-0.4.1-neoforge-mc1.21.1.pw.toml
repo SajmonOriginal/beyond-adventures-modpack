@@ -1,0 +1,8 @@
+name = "eg_particle_interactions-0.4.1-neoforge-mc1.21.1"
+filename = "eg_particle_interactions-0.4.1-neoforge-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xFCYuAs8/versions/Js4y2r4d/eg_particle_interactions-0.4.1-neoforge-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "caba3b03c2f3d3dc30fbe2979246e14385c6db977f1da44673bbf95dcd0e3652"

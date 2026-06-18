@@ -1,0 +1,13 @@
+name = "bbsf-neoforge-1.21.1-1.0.0"
+filename = "bbsf-neoforge-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZnMA9t3T/versions/JARvuWny/bbsf-neoforge-1.21.1-1.0.0.jar"
+hash-format = "sha256"
+hash = "ed6e10125f75ce2249febd9746d17485a6d6be0cdb28bf752e263e05b571c995"
+
+[update]
+[update.curseforge]
+file-id = 6367566
+project-id = 1232054

@@ -1,0 +1,13 @@
+name = "Almanac-1.21.1-2-neoforge-1.5.2"
+filename = "Almanac-1.21.1-2-neoforge-1.5.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Gi02250Z/versions/cHGan9fQ/Almanac-1.21.1-2-neoforge-1.5.2.jar"
+hash-format = "sha256"
+hash = "379893246c33aaa6dd8e4a8711e349cd6835e08c2bd5b8bd7b7e81be9822aacb"
+
+[update]
+[update.curseforge]
+file-id = 7489091
+project-id = 1115285

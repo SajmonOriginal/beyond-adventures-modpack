@@ -1,0 +1,8 @@
+name = "VanillaPlus_v3.3"
+filename = "VanillaPlus_v3.3.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EPsIYDj1/versions/U3rhmRqW/VanillaPlus_v3.3.zip"
+hash-format = "sha256"
+hash = "d14c6f0331a33d3dd16e613f3c98fc8e77b8707fc4f2544231b2468a69f51d2b"

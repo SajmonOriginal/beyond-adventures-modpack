@@ -1,0 +1,13 @@
+name = "gaboulibs-neoforge-1.4"
+filename = "gaboulibs-neoforge-1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/N8aGZtvj/versions/LsfPosIY/gaboulibs-neoforge-1.4.jar"
+hash-format = "sha256"
+hash = "26b9d52f72f4e2da41950409b18481b46282fce18a6238baf392b9a584cbebd4"
+
+[update]
+[update.curseforge]
+file-id = 7195722
+project-id = 1367332

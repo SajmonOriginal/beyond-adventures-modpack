@@ -1,0 +1,16 @@
+name = "Particle Effects"
+filename = "ParticleEffects-1.4.0+1.21.1+neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PLAGcSFJ/versions/ewh5dAkH/ParticleEffects-1.4.0%2B1.21.1%2Bneoforge.jar"
+hash-format = "sha512"
+hash = "39e7f7e4abf02288d1fa831bb681725a726f12eb3dd96a5080163a4284533d2befbf13003515eaa5f9b13c38bd137793af0cb86366c65c9be4b1cd54d4acf5d8"
+
+[update]
+[update.curseforge]
+file-id = 8017633
+project-id = 1120746
+[update.modrinth]
+mod-id = "PLAGcSFJ"
+version = "ewh5dAkH"

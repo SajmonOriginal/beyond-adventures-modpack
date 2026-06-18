@@ -1,0 +1,9 @@
+# packwiz cache (re-fetched on demand, big & per-machine)
+.packwiz-cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+overrides/.voxy/
+overrides/.mixin.out/
+/mods.json

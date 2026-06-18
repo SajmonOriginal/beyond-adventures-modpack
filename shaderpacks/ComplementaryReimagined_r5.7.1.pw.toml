@@ -1,0 +1,8 @@
+name = "ComplementaryReimagined_r5.7.1"
+filename = "ComplementaryReimagined_r5.7.1.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
+hash-format = "sha256"
+hash = "24a20634a7832d422d3cd5023be16829f26840e25c69404dd418306ea79f63f0"

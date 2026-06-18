@@ -1,0 +1,13 @@
+name = "enderscape-neoforge-1.0.9+mc1.21.1"
+filename = "enderscape-neoforge-1.0.9+mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/btCrWvHr/versions/K3Vz3uXn/enderscape-neoforge-1.0.9%2Bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "1caf18aa7b8385ac83d4d700f7d48cc1c3aeed321550a7204cb80a1493c1809a"
+
+[update]
+[update.curseforge]
+file-id = 6875961
+project-id = 536638

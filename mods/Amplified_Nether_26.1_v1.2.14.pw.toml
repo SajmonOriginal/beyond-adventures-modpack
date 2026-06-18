@@ -1,0 +1,13 @@
+name = "Amplified_Nether_26.1_v1.2.14"
+filename = "Amplified_Nether_26.1_v1.2.14.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/wXiGiyGX/versions/rp2A0tDf/Amplified_Nether_26.1_v1.2.14.jar"
+hash-format = "sha256"
+hash = "c8ac15eed912115322a24eb399a799a0a5a2341f35c11fd248c653a991ad5d27"
+
+[update]
+[update.curseforge]
+file-id = 7842279
+project-id = 552176

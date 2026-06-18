@@ -1,0 +1,13 @@
+name = "DiagonalWalls-v21.1.2-1.21.1-NeoForge"
+filename = "DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FQgc8dib/versions/2k3GCxEt/DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "9ea9e986a09f72c5a40b0ec571c64b802e16f0b4d15b0be452c1d71ceddd1726"
+
+[update]
+[update.curseforge]
+file-id = 5918894
+project-id = 969422

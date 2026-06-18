@@ -1,0 +1,13 @@
+name = "Beyond Adventures"
+author = "Sajmon"
+version = "1.7.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "fcbbfeff28d811a4f017fbf924a5994f39998c2dd598182a1d871ce476305764"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.228"

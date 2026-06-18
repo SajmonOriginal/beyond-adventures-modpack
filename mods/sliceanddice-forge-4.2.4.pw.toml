@@ -1,0 +1,13 @@
+name = "sliceanddice-forge-4.2.4"
+filename = "sliceanddice-forge-4.2.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GmjmRQ0A/versions/tyVnEa75/sliceanddice-forge-4.2.4.jar"
+hash-format = "sha256"
+hash = "c3bd743a73eed3de14f6be5221fe68655cfeed0749f8f467f2ce2012ed1416bd"
+
+[update]
+[update.curseforge]
+file-id = 7738176
+project-id = 659674

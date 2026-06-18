@@ -1,0 +1,13 @@
+name = "connectiblechains-neoforge-1.21.1-1.2.5"
+filename = "connectiblechains-neoforge-1.21.1-1.2.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5pzBXDS3/versions/haHsKT7H/connectiblechains-neoforge-1.21.1-1.2.5.jar"
+hash-format = "sha256"
+hash = "1e01b5b60e63d581777610c69807ef21a342215a2b069239ea3bad8dd5ef4907"
+
+[update]
+[update.curseforge]
+file-id = 7711309
+project-id = 1451848

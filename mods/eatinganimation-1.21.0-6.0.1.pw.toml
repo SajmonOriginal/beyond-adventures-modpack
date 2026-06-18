@@ -1,0 +1,13 @@
+name = "eatinganimation-1.21.0-6.0.1"
+filename = "eatinganimation-1.21.0-6.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/X8CISwXp/versions/D7saUVV5/eatinganimation-1.21.0-6.0.1.jar"
+hash-format = "sha256"
+hash = "3b222ada8de0cd982b755019cb9ada012d0f8a440fb67f2bdc634c241b7481cb"
+
+[update]
+[update.curseforge]
+file-id = 5567664
+project-id = 570544

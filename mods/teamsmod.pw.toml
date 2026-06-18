@@ -1,0 +1,8 @@
+name = "teamsmod"
+filename = "teamsmod-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://maven.sajmon.gg/releases/cz/sajmonoriginal/teamsmod/teamsmod/1.0.0/teamsmod-1.0.0.jar"
+hash-format = "sha256"
+hash = "802aefda15056444889d3608b3e3aa62b7bde518110d686ca05a1a3221060acd"

@@ -1,0 +1,13 @@
+name = "deep_aether-1.21.1-1.1.5.1"
+filename = "deep_aether-1.21.1-1.1.5.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gcHIih5B/versions/MSW5emg8/deep_aether-1.21.1-1.1.5.1.jar"
+hash-format = "sha256"
+hash = "0f55ad970715bb933344e785b2c35a7354dfba25ffd426c0b68921d08bbe0ce5"
+
+[update]
+[update.curseforge]
+file-id = 7843283
+project-id = 852465

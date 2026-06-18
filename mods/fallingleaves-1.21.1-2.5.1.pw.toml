@@ -1,0 +1,13 @@
+name = "fallingleaves-1.21.1-2.5.1"
+filename = "fallingleaves-1.21.1-2.5.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2JAUNCL4/versions/PVzaPLSv/fallingleaves-1.21.1-2.5.1.jar"
+hash-format = "sha256"
+hash = "3c03b49b5f35481d4baf61ec1fe04233b39cb5a34f7447be04f7d4efd2976834"
+
+[update]
+[update.curseforge]
+file-id = 6240977
+project-id = 463155

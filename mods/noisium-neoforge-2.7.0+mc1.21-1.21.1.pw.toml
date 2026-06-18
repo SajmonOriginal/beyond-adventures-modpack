@@ -1,0 +1,13 @@
+name = "noisium-neoforge-2.7.0+mc1.21-1.21.1"
+filename = "noisium-neoforge-2.7.0+mc1.21-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hasdd01q/versions/VviuomrA/noisium-neoforge-2.7.0%2Bmc1.21-1.21.1.jar"
+hash-format = "sha256"
+hash = "ca097cd53fcdabecbcbf22e2515eb1956f313f094cd3a0506800ebf239e255f9"
+
+[update]
+[update.curseforge]
+file-id = 7569595
+project-id = 1357563

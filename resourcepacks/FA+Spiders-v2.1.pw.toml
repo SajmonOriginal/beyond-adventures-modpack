@@ -1,0 +1,13 @@
+name = "FA+Spiders-v2.1"
+filename = "FA+Spiders-v2.1.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aqKnWmBf/versions/5OKQMF8g/FA%2BSpiders-v2.1.zip"
+hash-format = "sha256"
+hash = "23411cc0584fc74432bd024fa559b4117d40c1b4055e2f68f1bb498994eaafe6"
+
+[update]
+[update.curseforge]
+file-id = 7292177
+project-id = 1346116

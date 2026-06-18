@@ -1,0 +1,13 @@
+name = "denseflower-1.0.0"
+filename = "denseflower-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qJCQb492/versions/dd53qCXZ/denseflower-1.0.0.jar"
+hash-format = "sha256"
+hash = "1c13d45c20ad0bd17ee87ebd64808fab01cf7e0cf7742ec84609558ee1617106"
+
+[update]
+[update.curseforge]
+file-id = 7384220
+project-id = 1413643

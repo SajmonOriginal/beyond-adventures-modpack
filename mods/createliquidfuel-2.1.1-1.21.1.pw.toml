@@ -1,0 +1,13 @@
+name = "createliquidfuel-2.1.1-1.21.1"
+filename = "createliquidfuel-2.1.1-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sH9tXU9f/versions/7oNrI3y9/createliquidfuel-2.1.1-1.21.1.jar"
+hash-format = "sha256"
+hash = "ccd44b069962890352dfee442508880a37eecd3c5625d74d668dd6eb7d39ee3d"
+
+[update]
+[update.curseforge]
+file-id = 6521990
+project-id = 840734

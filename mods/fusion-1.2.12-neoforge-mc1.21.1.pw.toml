@@ -1,0 +1,13 @@
+name = "fusion-1.2.12-neoforge-mc1.21.1"
+filename = "fusion-1.2.12-neoforge-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/p19vrgc2/versions/h2GrA0Ku/fusion-1.2.12-neoforge-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "5961f78d85b7bd88205bc65c9f8182bc041646aa3579fa39810878d9b5b87c0c"
+
+[update]
+[update.curseforge]
+file-id = 7471474
+project-id = 854949
