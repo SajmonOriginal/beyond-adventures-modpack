@@ -1,0 +1,8 @@
+name = "properscoreboard"
+filename = "properscoreboard-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://maven.sajmon.gg/releases/cz/sajmonoriginal/properscoreboard/properscoreboard/1.0.0/properscoreboard-1.0.0.jar"
+hash-format = "sha256"
+hash = "1aaf6d030f87a7ed6c1aef90020437b959f34b392ee4e2f1613bb11a4d4aa440"

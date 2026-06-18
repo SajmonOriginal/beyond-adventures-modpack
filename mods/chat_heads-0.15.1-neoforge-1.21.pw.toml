@@ -1,13 +1,13 @@
-name = "chat_heads-0.15.1-neoforge-1.21"
-filename = "chat_heads-0.15.1-neoforge-1.21.jar"
+name = "Chat Heads"
+filename = "chat_heads-0.15.2-neoforge-1.21.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/8oDa7chj/chat_heads-0.15.1-neoforge-1.21.jar"
-hash-format = "sha256"
-hash = "b1ed6a52efa3cb43e4c37e3982bc7b08116302511b8f675346f6aea6d3524e41"
+hash-format = "sha1"
+hash = "86abc08fbfa8eb3e2a41aa4403a6bd52543ea665"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7875229
+file-id = 8244448
 project-id = 407206

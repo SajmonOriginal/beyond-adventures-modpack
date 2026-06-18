@@ -1,0 +1,8 @@
+name = "nemos-backpacks-neoforge"
+filename = "nemos-backpacks-neoforge-1.0.2.1.jar"
+side = "both"
+
+[download]
+url = "https://maven.sajmon.gg/releases/cz/sajmonoriginal/nemos-backpacks-neoforge/nemos-backpacks-neoforge/1.0.2.1/nemos-backpacks-neoforge-1.0.2.1.jar"
+hash-format = "sha256"
+hash = "9fade57641439f3dea5766e00841f3851d8085526be7969a88218428165b839f"

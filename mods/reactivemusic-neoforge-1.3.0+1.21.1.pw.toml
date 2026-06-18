@@ -1,13 +1,13 @@
-name = "reactivemusic-neoforge-1.3.0+1.21.1"
-filename = "reactivemusic-neoforge-1.3.0+1.21.1.jar"
+name = "Reactive Music"
+filename = "reactivemusic-neoforge-1.3.4+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Bqnfeesx/versions/n9oYTze1/reactivemusic-neoforge-1.3.0%2B1.21.1.jar"
-hash-format = "sha256"
-hash = "563e8c9b2933b2273fb70cde89875d7ff56865d4d97dbaa3dfc1959cd71cf27a"
+hash-format = "sha1"
+hash = "2b9878d94d4be91a6296dbe3710dbdd3695fcf3c"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7797939
+file-id = 8268770
 project-id = 960382

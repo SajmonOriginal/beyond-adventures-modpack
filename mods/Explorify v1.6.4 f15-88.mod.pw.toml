@@ -1,13 +1,13 @@
-name = "Explorify v1.6.4 f15-88.mod"
-filename = "Explorify v1.6.4 f15-88.mod.jar"
+name = "Explorify – Dungeons & Structures"
+filename = "Explorify v1.6.5.mod.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/HSfsxuTo/versions/9vHj342y/Explorify%20v1.6.4%20f15-88.mod.jar"
-hash-format = "sha256"
-hash = "dcc5340dc771c61358f53b9818594e9e588d9af81c0a1e906c373fb14d9be7a3"
+hash-format = "sha1"
+hash = "5fb28be29200a41b034e423d87823eb19ad651cd"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7092252
+file-id = 8082824
 project-id = 698309

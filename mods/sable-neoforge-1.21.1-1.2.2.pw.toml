@@ -1,13 +1,13 @@
-name = "sable-neoforge-1.21.1-1.2.2"
-filename = "sable-neoforge-1.21.1-1.2.2.jar"
+name = "Sable"
+filename = "sable-neoforge-1.21.1-2.0.3.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/T9PomCSv/versions/3FMsUjO4/sable-neoforge-1.21.1-1.2.2.jar"
-hash-format = "sha256"
-hash = "15fb660a0d368204b37f3967bfcc48137397b7174ca2945c5635cc4539c755f8"
+hash-format = "sha1"
+hash = "f3ba9a497122ba29d9e94ebe6f9a3a3aaa5fa756"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8007005
+file-id = 8263584
 project-id = 1312371

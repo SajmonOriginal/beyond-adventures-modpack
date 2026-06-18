@@ -1,13 +1,13 @@
-name = "exposure-neoforge-1.21.1-1.9.16"
-filename = "exposure-neoforge-1.21.1-1.9.16.jar"
+name = "Exposure"
+filename = "exposure-neoforge-1.21.1-1.9.18.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/hB899VmG/versions/OJ3DFzQc/exposure-neoforge-1.21.1-1.9.16.jar"
-hash-format = "sha256"
-hash = "c4adfe346094cf4ce0008c98bf0d20d7c96b9291b3cd31ff2234495eaca2bb58"
+hash-format = "sha1"
+hash = "c37fe23cb482e9b3716ff5439defd4c84e2615ee"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7862664
+file-id = 8223555
 project-id = 871755

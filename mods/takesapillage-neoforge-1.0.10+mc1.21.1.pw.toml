@@ -1,13 +1,13 @@
-name = "takesapillage-neoforge-1.0.10+mc1.21.1"
-filename = "takesapillage-neoforge-1.0.10+mc1.21.1.jar"
+name = "It Takes a Pillage Continuation"
+filename = "takesapillage-neoforge-1.0.12+mc1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/QOJOg1gE/versions/k5CFDaSy/takesapillage-neoforge-1.0.10%2Bmc1.21.1.jar"
-hash-format = "sha256"
-hash = "a86e4396e68e7c2ff22fd4ce9369e933139011c285097573ea76eeb914eef20d"
+hash-format = "sha1"
+hash = "8362c45471e934ecc714e66f746c757d81d49bea"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7417040
+file-id = 8249194
 project-id = 1111063

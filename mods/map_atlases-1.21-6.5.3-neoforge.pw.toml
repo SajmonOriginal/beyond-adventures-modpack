@@ -1,13 +1,13 @@
-name = "map_atlases-1.21-6.5.3-neoforge"
-filename = "map_atlases-1.21-6.5.3-neoforge.jar"
+name = "Map Atlases [Forge]"
+filename = "map_atlases-neoforge-1.21-6.6.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/4hwXMFif/versions/BlD4MEYm/map_atlases-1.21-6.5.3-neoforge.jar"
-hash-format = "sha256"
-hash = "a060c26a2514bcdd2917fef04c59ca96524f9981c78b06ada19afd6dc3b06127"
+hash-format = "sha1"
+hash = "d3f24eac734179592e0f4e1af9625bcb2726f7f8"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7707121
+file-id = 8137491
 project-id = 519759

@@ -1,13 +1,13 @@
-name = "FA+Spiders-v2.1"
-filename = "FA+Spiders-v2.1.zip"
+name = "Fresh Animations: Spiders"
+filename = "FA+Spiders-v2.2.zip"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/aqKnWmBf/versions/5OKQMF8g/FA%2BSpiders-v2.1.zip"
-hash-format = "sha256"
-hash = "23411cc0584fc74432bd024fa559b4117d40c1b4055e2f68f1bb498994eaafe6"
+hash-format = "sha1"
+hash = "8a673f176a9ab80b703586547d9d527c00878451"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7292177
+file-id = 7999323
 project-id = 1346116

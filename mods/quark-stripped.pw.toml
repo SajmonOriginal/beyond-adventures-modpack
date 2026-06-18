@@ -1,0 +1,8 @@
+name = "quark-stripped"
+filename = "quark-stripped-4.1-480.jar"
+side = "both"
+
+[download]
+url = "https://maven.sajmon.gg/releases/cz/sajmonoriginal/quark-stripped/4.1-480/quark-stripped-4.1-480.jar"
+hash-format = "sha256"
+hash = "38ace4629f3f384dd84f4f00cf867701469d3f934c81d1053eaca9334a72b5e7"
